@@ -76,6 +76,7 @@ function TextForm(props) {
 
       <p>{text.split(" ").length} word and {text.length}characters</p>
       <p>{0.008*text.split(" ").length} Minutes Read</p>
+      <h1>Preview</h1>
 
     </div>
     </>
