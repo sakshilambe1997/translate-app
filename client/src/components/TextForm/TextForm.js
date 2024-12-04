@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function TextForm(props) {
-  const [text, setText] = useState("Enter Here Text");
+  const [text, setText] = useState(" ");
 
   const convertToUpperCase = () => {
     let newText = text.toUpperCase();
@@ -39,9 +39,9 @@ function TextForm(props) {
       <h3 className="text-center my-4">{props.heading}</h3>
       <div className="mb-3">
         <textarea
-          className="form-control border border-primary"
+          className="form-control border border-primary w-75 d-block mx-auto my-0"
           id="myBox"
-          rows="10"
+          rows="7"
           value={text}
           onChange={handleOnChange}
         ></textarea>
@@ -71,12 +71,15 @@ function TextForm(props) {
       </div>
     </div>
 
-    <div className="container">
-      <h1>your count</h1>
+    <div className="container my-3">
+      <h4><u>Your Text Summury</u></h4>
 
       <p>{text.split(" ").length} word and {text.length}characters</p>
-      <p>{0.008*text.split(" ").length} Minutes Read</p>
-      <h1>Preview</h1>
+      <p>{0.008 * text.split(" ").length} Minutes Read</p>
+    
+      <h4><u>Preview</u></h4>
+
+      <p>{text}</p>
 
     </div>
     </>
