@@ -21,7 +21,7 @@ function Navbar(props) {
          </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link " href="/">{props.aboutText}</a>
+          <a className="nav-link text-black" href="/">{props.aboutText}</a>
         </li>
       </ul>
       <form className="d-flex" role="search">

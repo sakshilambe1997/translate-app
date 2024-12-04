@@ -13,6 +13,12 @@ function TextForm(props) {
     setText(lowText);
   };
 
+  const clearText = () => {
+   let newText =""
+   setText(newText)
+  };
+
+
   const handleOnChange = (e) => {
     setText(e.target.value);
   };
@@ -67,6 +73,13 @@ function TextForm(props) {
           onClick={convertToMarathi}
         >
           Convert to Marathi
+        </button>
+
+        <button
+          className="btn btn-primary mx-2"
+          onClick={clearText}
+        >
+         Clear Text
         </button>
       </div>
     </div>
